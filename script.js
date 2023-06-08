@@ -30,6 +30,9 @@ function handleInput(e) {
       setupInput();
       return;
   }
+
+  grid.cells.forEach((cell) => cell.mergeTiles());
+
   setupInput();
 }
 
